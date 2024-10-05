@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+       
+       .container {
+      display: flex;
+      justify-content: space-between; /* Distributes items between left and right */
+      align-items: center; /* Vertically centers the items */
+      padding-bottom: 20px;
+      background-color:white;
+      
+    
+    }
+
+    .container h4 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .container button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+     
+
+    .school-header {
+      display: flex;
+      align-items: center;
+      
+    }
+    
+    .school-logo {
+      width: 90px;
+      height: 105px;
+      
+        }
+    
+    h4{
+      color: blue;
+      
+      margin: 0;
+    }
+
+  p {
+     
+      margin: 5px 0 0 0;
+      color: #555;
+    }
+   /* .container{
+    display: flex 3fr ;
+   } */
+
+
+
+
+   .footer {
+      background-color: #f8f9fa; /* Light grey background */
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    </style>
+
+
+  </head>
+  <body>
+    
+        
+    
+           
+            <p style="background-color:darkblue; color: white; padding-left: 30px;padding-right: 70px;padding-top: 10px; padding-bottom: 10px;"><button style="background-color: lightskyblue; color: white; border-radius: 10px;border-color: lightblue;" >Online Admission </button> &nbsp  &nbsp    &nbsp  &nbsp      0495 2965004,9447458398  &nbsp &nbsp &nbsp  &nbsp   info@apexinternationalschool.org
+              &nbsp  &nbsp       &nbsp  &nbsp   &nbsp  &nbsp    &nbsp  &nbsp    &nbsp  &nbsp    &nbsp  &nbsp    &nbsp  &nbsp      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                   </svg>       &nbsp  &nbsp  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                   </svg>      &nbsp  &nbsp  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                     </svg>      &nbsp  &nbsp  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                  </svg>
+            </p>
+
+           
+            
+                
+        
+    
+       
+  
+            <nav class="navbar navbar-expand-lg " style="background-color:white;">
+                <div class="container-fluid">
+  
+
+  <div class="school-header" >
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwZlBFmJC8VnStwCJfXcBuZv34HYMVRmsroA&s" alt="" class="school-logo">
+
+    
+    <div >
+      <h4>APEX INTERNATIONAL SCHOOL</h4>
+      <p>(Affiliated to CBSE Delhi No: 930963)</p>
+    </div>
+    
+  </div>
+
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mountains</a></li>
+                  <li><a class="dropdown-item" href="#">Valleys</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Hills</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACADEMICS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mountains</a></li>
+                  <li><a class="dropdown-item" href="#">Valleys</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Hills</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ADMISSIONS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mountains</a></li>
+                  <li><a class="dropdown-item" href="#">Valleys</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Hills</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  STUDENT LIFE
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mountains</a></li>
+                  <li><a class="dropdown-item" href="#">Valleys</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Hills</a></li>
+                </ul>
+              
+              <li class="nav-item"></li>
+                <a class="nav-link " aria-current="page" href="#">NEWS & EVENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+</div>
+
+
+
+
+
+
+
+
+      
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner" >
+            <div class="carousel-item active" style="background-image: url('https://www.visualsstock.com/images/Low/5/AK59028.jpg'); height: 500px;background-repeat: no-repeat; background-size: 100%;" >
+                <!-- <div class="carousel-caption d-none d-md-block"> -->
+              
+                <h3 style="color: white; padding-left: 100px; padding-top: 100px;" ><b>Helping Your children learn <br>without the burden. </b></h3>
+                <p style="color:white ; padding-left: 100px;">Our teachers are lifelong learners themselves, constantly updating their knowledge and skills to stay at the forefront of educational advancements. They utilize innovative teaching strategies and tools to make learning engaging and relevant, preparing our students for success in an ever-evolving world.</p>
+        </div>      
+        <!-- <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.gettyimages.com/id/1072470136/photo/students-learning-computer-programming-stock-image.jpg?s=612x612&w=gi&k=20&c=xWhUmbEVQbUgFL9aNCdMoLd9ccuPymC806jmAlX2QNU=" height="500px" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 style="color: white; padding-left: 100px; padding-top: 100px;" ><b>Helping Your children learn <br>without the burden. </b></h3>
+                <p style="color:white ; padding-left: 100px;">Our teachers are lifelong learners themselves, constantly updating their knowledge and skills to stay at the forefront of educational advancements. They utilize innovative teaching strategies and tools to make learning engaging and relevant, preparing our students for success in an ever-evolving world.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.gettyimages.com/id/1148218795/photo/children-cheering-in-classroom.jpg?s=612x612&w=gi&k=20&c=mAtT-rGxoV7dfjAoTlnB9ic6D2Y2ev0j1eYnsHye-PQ=" height="500px" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 style="color: white; padding-left: 100px; padding-top: 100px;" ><b>A Perfect Education <br>For Enhancing <br>Your Child's Future </b></h3>
+                <p style="color:white ; padding-left: 100px;">Our teachers are lifelong learners themselves, constantly updating their knowledge and skills to stay at the forefront of educational advancements. They utilize innovative teaching strategies and tools to make learning engaging and relevant, preparing our students for success in an ever-evolving world.</p>
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+
+
+
+
+
+<!-- <div class="parent">
+    <div style="padding-left: 7%; width: 750px;"><h2>Welcome to the website </h2><br>
+   
+       <span><p style="color: darkgrey;">Apex International school is a secondary school affiliated to CBSE, Delhi, established in the year 2005. It is situated at Odumbra, in Olavanna Panchayath, Calicut. The school is located in a sprawling 3 acre green campus, 1.5 km from mini bye-pass. It is a co-educational institution caters to students from K.G to Std X. The mission of the school is to Promote Education that builds the fundamental characters such as honesty, compassion, courage, persistence and responsibility. The management envisage a completely different school with personalized care to develop intellectual and social skills. The school is an extension of family where we bring out the best out of the students with the partnership of parents. School give importance to, brotherhood, physical well-being and hygiene and inculcate civic sense among students. Training in co-curricular activities is given to every child focusing on the holistic development of the child. The school want students to enjoy every moment of their stay at school and create a love for learning and develop a sense of self esteem.</p>
+    
+        
+ 
+    
+        
+        <video  controls loop height="300px" width="300px" autoplay muted>
+            <source src="https://youtu.be/s3l7IsnY_jk" type="video/ogg">
+    
+        </video></span>
+        </div>
+</div> -->
+
+
+
+<div class="container mt-5" style="background-color:white;">
+    <div class="row">
+        
+        <div class="col-md-8">
+            <p>
+                Apex International school is a secondary school affiliated to CBSE, Delhi, established in the year 2005. It is situated at Odumbra, in Olavanna Panchayath, Calicut. The school is located in a sprawling 3 acre green campus, 1.5 km from mini bye-pass. It is a co-educational institution caters to students from K.G to Std X. The mission of the school is to Promote Education that builds the fundamental characters such as honesty, compassion, courage, persistence and responsibility. The management envisage a completely different school with personalized care to develop intellectual and social skills. The school is an extension of family where we bring out the best out of the students with the partnership of parents. School give importance to, brotherhood, physical well-being and hygiene and inculcate civic sense among students. Training in co-curricular activities is given to every child focusing on the holistic development of the child. The school want students to enjoy every moment of their stay at school and create a love for learning and develop a sense of self esteem.
+            </p>
+        </div>
+
+        
+        <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://youtu.be/s3l7IsnY_jk"  width="300px" height="300px"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h5 style="padding-top: 10px; padding-bottom:10px ;text-align: center;">
+    Apex International School
+</h5>
+<h1 style="padding-top: 10px; padding-bottom:10px ;text-align: center;">News & Events</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card" style="height: 500px;">
+        <img src="https://apexinternationalschool.org/img/content/services/chess.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chess</h5>
+          <h6 style="color: red;">Feb 19,2018</h6>
+          <p class="card-text">Chess is an ancient and strategic two-player board game that has been played for centuries. It involves a mix of tactics, strategy, and deep calculation. >Chess is an ancient and strategic two-player board game that has been played for centuries.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://apexinternationalschool.org/img/content/services/claymodeling.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Clay modeling Competition</h5>
+          <h6 style="color: red;">Feb 19,2018</h6>
+          <p class="card-text">Clay modeling is a popular art form that involves shaping clay into different forms and structures. It is a creative activity that helps develop fine motor skills, imagination, and artistic expression</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" >
+        <img src="https://apexinternationalschool.org/img/content/services/skiting.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Skating</h5>
+          <h6 style="color: red;">Feb 19,2018</h6>
+          <p class="card-text">Whether it's a recreational hobby or a competitive sport, skating offers numerous physical, mental, and social benefits. It can be done on various surfaces, including ice, roller rinks, or even on the streets.</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+  <div style="padding-left: 500px; padding-top: 50px; padding-bottom: 50px;">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination" >
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+     
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div>
+    <h2>Come learn, explore and play at Apex International School this  <br><u>summer!</u></h2>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://apexinternationalschool.org/img/projects/cp-lab.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWnqTfSAmmkdYUoSiglT5WAHBMLGYJHTbg2Q&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+             
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-LTGbbTCGZTNm0p5wITI-LYP0ys-wRJAHw&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqoOBDUuqhhQxZ4bMPfXtdJUBOw8sgy1NKSg&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              
+            </div>
+          </div>
+          
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://media.istockphoto.com/id/1163985429/photo/group-of-schoolboys-and-schoolgirls-at-school-campus.jpg?s=612x612&w=0&k=20&c=gF0_Qpp1uZ6VAyOi90xprZISgaiLxnpssWky0zJ6gRY=" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+             
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://www.shutterstock.com/image-photo/happy-indian-student-schoolgirl-do-260nw-2248446779.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    
+</div>
+
+
+
+
+ 
+<div  >
+    <p style="color: red;padding-left: 500px;padding-top: 50px;">Share your Academy Pride with the world!</p>
+<h2 style="padding-left: 400px; padding-bottom: 50px;">See our full <u>social </u>stream here!</h2>
+
+<div>
+<div class="col-md-6">
+<div >
+    <img src="https://scontent.fmct2-3.fna.fbcdn.net/v/t39.30808-6/305204466_448400883975444_3226849528801066813_n.jpg?stp=dst-jpg_p280x280&_nc_cat=109&ccb=1-7&_nc_sid=4cb600&_nc_ohc=ISNM8gTCVOYQ7kNvgHvhGKB&_nc_ht=scontent.fmct2-3.fna&edm=ADwmN6EEAAAA&_nc_gid=AO-xrO8ddtwTkddolvTgdL9&oh=00_AYDQoj9O8x0qUJ7bGEIvAI-n2Nak6vyElmzi8wV1fZIHmg&oe=6706A83E" width="500px" height="150px"> <br>
+    <video  controls loop height="300px" width="500px" autoplay muted>
+        <source src="https://www.google.com/search?q=school+videos+for+students&sca_esv=6449538529ffda2f&biw=1163&bih=539&tbm=vid&sxsrf=ADLYWIL_vrfBQ2PjZ5aeAto408qZDujKXw%3A1728122549954&ei=tQ4BZ5ryOayQ9u8Pt4qL6Ao&oq=school+videos&gs_lp=Eg1nd3Mtd2l6LXZpZGVvIg1zY2hvb2wgdmlkZW9zKgIIATIKEAAYgAQYQxiKBTIKEAAYgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKMQUABYAHAAeACQAQCYAeQBoAHHA6oBAzItMrgBAcgBAJgCAqAC0gPCAgYQABgHGB6YAwCIBgGSBwMyLTKgB-0L&sclient=gws-wiz-video#" type="video/ogg">
+
+    </video>
+    </div>
+    
+    
+  <div class="col-md-6">
+    <div style="width: 500px;" >
+
+        <video  controls loop height="700px" width="500px" autoplay muted>
+            <source src="https://www.google.com/search?q=school+videos+for+students&sca_esv=6449538529ffda2f&biw=1163&bih=539&tbm=vid&sxsrf=ADLYWIL_vrfBQ2PjZ5aeAto408qZDujKXw%3A1728122549954&ei=tQ4BZ5ryOayQ9u8Pt4qL6Ao&oq=school+videos&gs_lp=Eg1nd3Mtd2l6LXZpZGVvIg1zY2hvb2wgdmlkZW9zKgIIATIKEAAYgAQYQxiKBTIKEAAYgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKMQUABYAHAAeACQAQCYAeQBoAHHA6oBAzItMrgBAcgBAJgCAqAC0gPCAgYQABgHGB6YAwCIBgGSBwMyLTKgB-0L&sclient=gws-wiz-video#" type="video/ogg">
+    
+        </video>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+   
+
+
+<div class="container">
+  <h4 style="color: black;"><u>Admission</u> Started For 2023-2024</h4>
+  <button style="background-color: darkblue; color: white; border-radius:20px ; border-color: darkblue;">Apply Online</button>
+</div>
+
+
+
+
+
+
+
+
+  <div class="container1">
+   
+  </div>
+
+
+  <div class="footer" style="background-color: darkblue; color: white;">
+    <div class="container1">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Students Help</h5>
+           <ul class="list-unstyled" >
+            <li ><a href="#">>Students Login</a></li>
+            <li><a href="#">>latest News</a></li>
+            <li><a href="#">>Events</a></li>
+            <li><a href="#">>Transfer Certificate</a></li>
+            <li><a href="#">>Results & Achivments</a></li>
+
+          </ul>
+          
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">>About Apex</a></li>
+            <li><a href="#">>Managment</a></li>
+            <li><a href="#">Faculty & Staffs</a></li>
+            <li><a href="#">School Information</a></li>
+            <li><a href="#">School Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3" style="color: white;">
+          <h5>Academics</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">>Pre School</a></li>
+            <li><a href="#">>Junior School</a></li>
+            <li><a href="#">Senior School</a></li>
+            
+          </ul>
+        
+        </div>
+        <div class="col-md-3">
+          
+          <h5>Contact Info</h5>
+
+          <p style=" color:white ;">APEX INTERNATIONAL SCHOOL,
+            Odumbra, Olavanna.
+            P.O, Calicut-673 025,
+            Kerala, India. 
+            <br>
+            
+            Phone:
+            0495 2965004
+            0495 2432811
+            <br>
+        
+            Email : info@apexinternationalschool.org
+          </p>
+        </div>
+
+        <hr>
+    
+    
+    
+      <p style="color: white;">Apex Internatioal School &copy; 2018. All rights reserved.Designed & Developed by Amr</p>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+<!-- </html> <img src="https://www.visualsstock.com/images/Low/5/AK59028.jpg" height="500px" class="d-block w-100" alt="..."> -->
